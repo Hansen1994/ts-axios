@@ -13,6 +13,7 @@
     ]
   },
   "dependencies": {
-    "@axios/helpers": "workspace:^1.0.0"
+    "@axios/helpers": "workspace:^1.0.0",
+    "@axios/types": "workspace:^1.0.0"
   }
 }

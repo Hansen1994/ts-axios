@@ -46,7 +46,8 @@ function createConfig(format, output) {
   }
   return {
     // 导出rollup的配置
-    input: resolve('src/index.ts'),
+    // input: resolve('src/index.ts'),
+    input: resolve('index.ts'),
     output,
     external,
     plugins: [json(), ts(), commonjs(), nodeResolve()],

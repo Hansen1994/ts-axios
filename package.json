@@ -4,7 +4,7 @@
   "description": "学习ts-axios",
   "main": "index.js",
   "scripts": {
-    "dev": "node script/dev.js core -f global -s",
+    "dev": "node script/dev.js runtime -f global -s",
     "node": "node examples/server.js"
   },
   "repository": {

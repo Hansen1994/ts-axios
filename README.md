@@ -45,15 +45,15 @@ packages:
   }
   ```
 
-- 通过下面命令将 @axios/shared@workspace放入@axios/reactivity，作为相互引用
+- 通过下面命令将 @axios/helpers@workspace放入@axios/core，作为相互引用
 
-  `pnpm i @axios/shared@workspace --filter @axios/reactivity`
+  `pnpm i @axios/helpers@workspace --filter @axios/core`
 
-- 紧接着在新建script目录，然后在package.json上写上,表示只要reactivity，而且过滤的全局的，并添加source-map， 这里主要和后面的rollup做关联的，也就是 dev.js -> rollup打包 -> rollup.config.js
+- 紧接着在新建script目录，然后在package.json上写上,表示只要core，而且过滤的全局的，并添加source-map， 这里主要和后面的rollup做关联的，也就是 dev.js -> rollup打包 -> rollup.config.js
 
   ```javascript
   "scripts": {
-      "dev": "node scripts/dev.js reactivity -f global -s"
+      "dev": "node scripts/dev.js core -f global -s"
     },
   ```
 

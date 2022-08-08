@@ -49,14 +49,16 @@ importers:
   packages/core:
     specifiers:
       '@axios/helpers': workspace:^1.0.0
+      '@axios/types': workspace:^1.0.0
     dependencies:
       '@axios/helpers': link:../helpers
+      '@axios/types': link:../types
 
   packages/helpers:
     specifiers:
-      '@axios/utils': workspace:^1.0.0
+      '@axios/types': workspace:^1.0.0
     dependencies:
-      '@axios/utils': link:../utils
+      '@axios/types': link:../types
 
   packages/reactivity:
     specifiers:
@@ -64,8 +66,20 @@ importers:
     dependencies:
       '@axios/shared': link:../shared
 
+  packages/runtime:
+    specifiers:
+      '@axios/share': workspace:^1.0.0
+    dependencies:
+      '@axios/share': link:../share
+
   packages/shared:
     specifiers: {}
+
+  packages/types:
+    specifiers:
+      '@axios/helpers': workspace:^1.0.0
+    dependencies:
+      '@axios/helpers': link:../helpers
 
 packages:
 

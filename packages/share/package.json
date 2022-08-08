@@ -1,0 +1,15 @@
+{
+  "name": "@axios/share",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "dist/share.esm-bundler.js",
+  "unpkg": "dist/share.global.js",
+  "buildOptions": {
+    "name": "axiosshare",
+    "formats": [
+      "esm-bundler",
+      "cjs",
+      "global"
+    ]
+  }
+}

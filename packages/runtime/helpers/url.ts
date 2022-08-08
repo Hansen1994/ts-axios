@@ -1,4 +1,4 @@
-import { isDate, isPlainObject } from './utils';
+import { isDate, isPlainObject } from '@axios/share';
 
 function encode(val: string): string {
   return encodeURIComponent(val)

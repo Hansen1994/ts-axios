@@ -1,4 +1,4 @@
-import axios from '../../packages/core/src/index';
+import axios from '../../packages/runtime/index';
 
 axios({
   method: 'get',
